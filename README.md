@@ -6,7 +6,7 @@
 > 
 > University project. Hitchhiking ride search 1C app where drivers manage their rides and passengers select rides
 
-**Предмет (Subject)** :  Программное обеспечение экономических информационных систем / Software for economic information systems
+**Предмет / Subject** :  Программное обеспечение экономических информационных систем / Software for economic information systems
 
 **Курс / Course** : 3ий курс / 3rd course
 
