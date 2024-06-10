@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<CommandsVisibility>
+		<Command name="AccumulationRegister.БалансВодителей.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Города.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаявкаНаПоездку.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.БалансПассажиров.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаявкаНаПоездку.Command.МоиЗаявки">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.БалансПассажиров.Command.БалансПассажира">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.БалансВодителей.Command.БалансВодителя">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаявкаНаПоездку.Command.НовыеЗаявки">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПополнениеБаланса.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПополнениеБаланса.Command.ПополнениеБаланса">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Водитель">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.РейтингВодителей.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.РейтингПассажиров.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+</CommandInterface>

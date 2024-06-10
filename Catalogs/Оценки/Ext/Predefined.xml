@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="bbb50d71-af82-4ac6-a992-827e8f4226e0">
+		<Name>Один</Name>
+		<Code>01</Code>
+		<Description>1</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c4f6c28-3fac-4647-bfab-9755acb1d75c">
+		<Name>Два</Name>
+		<Code>02</Code>
+		<Description>2</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9b9fce79-7fc8-470d-a96f-2ed872723a60">
+		<Name>Три</Name>
+		<Code>03</Code>
+		<Description>3</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5162ec56-53e4-4d06-81cf-76db5d4606c4">
+		<Name>Четыре</Name>
+		<Code>04</Code>
+		<Description>4</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8191d63a-414d-482b-8136-21465c12b929">
+		<Name>Пять</Name>
+		<Code>05</Code>
+		<Description>5</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

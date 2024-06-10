@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата заявки</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Пассажир" id="7">
+			<DataPath>Объект.Пассажир</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПассажирКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПассажирРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<LabelField name="Поездка" id="10">
+			<DataPath>Объект.Поездка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПоездкаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПоездкаРасширеннаяПодсказка" id="12"/>
+		</LabelField>
+		<Button name="КомандаОткрытьФормуВыбораПоездки" id="22">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.КомандаОткрытьФормуВыбораПоездки</CommandName>
+			<ExtendedTooltip name="КомандаОткрытьФормуВыбораПоездкиРасширеннаяПодсказка" id="23"/>
+		</Button>
+		<InputField name="СтатусЗаявки" id="13">
+			<DataPath>Объект.СтатусЗаявки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтатусЗаявкиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СтатусЗаявкиРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="20">
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пассажир">false</xr:Value>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+			</UserVisible>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<Button name="Одобрить" id="16">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Одобрить</CommandName>
+					<ExtendedTooltip name="ОдобритьРасширеннаяПодсказка" id="17"/>
+				</Button>
+				<Button name="Отклонить" id="18">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Отклонить</CommandName>
+					<ExtendedTooltip name="ОтклонитьРасширеннаяПодсказка" id="19"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЗаявкаНаПоездку</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Одобрить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Одобрить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Одобрить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Одобрить</Action>
+		</Command>
+		<Command name="Отклонить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отклонить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отклонить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отклонить</Action>
+		</Command>
+		<Command name="КомандаОткрытьФормуВыбораПоездки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать поездку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда открыть форму выбора поездки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОткрытьФормуВыбораПоездки</Action>
+		</Command>
+	</Commands>
+</Form>
